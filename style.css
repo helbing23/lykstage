@@ -1,0 +1,168 @@
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+.primary--color{
+    color:#eb4e45;
+}
+/* header css starts */
+.navbar-toggle{
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    background: transparent;
+    border: none;
+}
+.navbar-toggle:focus{
+outline: none;
+}
+.nav-item.active ,.nav-item .nav-link:hover{
+    color: #eb4e45 !important;
+}
+.profile-img{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.header-nav.d-inline-flex {
+    align-items: first baseline;
+    padding-top: 1.5rem;
+    position: absolute;
+    right: 5rem;
+    top: -1rem;
+}
+/* header css ends */
+
+/* Main css starts  */
+  .card {
+    height: 450px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    background-size: cover !important;
+    color: white;
+    position: relative;
+    border-radius: 24px;
+    margin-bottom: 20px;
+  }
+  .card-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+  }
+  .card-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  .card-description p {
+    font-size: 15px;
+  }
+  .card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index:2;
+    background: black;
+    opacity: 0;
+  }
+  .card-link:hover{
+    opacity: 0.1;
+    border-radius: 24px;
+  }
+  .features img {
+    width: 100px;
+  }
+  .features h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .features p {
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  /* Main css ends  */
+  /* Mobile responsive starts */
+  @media (max-width:767px){
+    .card {
+        height: 200px;
+    }
+    .card-description {
+        bottom: 0;
+    }
+    .card-category {
+        font-size: 12px;
+    }
+    .profile-img {
+        width: 16px;
+        height: 16px;
+    }
+    .card-description h5 {
+        font-size: 10px;
+    }
+    .card-description h5 img {
+        width: 10px !important;
+        margin-left: 0.5rem !important;
+    }
+    .card-description p {
+        font-size: 8px;
+    }
+    .card-description p img {
+        width: 8px;
+    }
+    .header-nav {
+        right: 3.5rem !important;
+    }
+    
+}
+ /* Mobile responsive ends */
+ /* iPad css starts */
+@media (min-width: 768px) and (max-width: 1024px){
+    .card {
+        height: 250px;
+    }
+    .card-description {
+        bottom: 0;
+    }
+    .card-category {
+        font-size: 14px;
+    }
+    .profile-img {
+        width: 20px;
+        height: 20px;
+    }
+    .card-description h5 {
+        font-size: 12px;
+    }
+    .card-description h5 img {
+        width: 14px !important;
+        margin-left: 0.5rem !important;
+    }
+    .card-description p {
+        font-size: 10px;
+    }
+    .card-description p img {
+        width: 10px;
+    }
+    
+}
+ /* iPad css ends */
